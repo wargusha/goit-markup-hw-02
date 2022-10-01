@@ -1,0 +1,183 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --white: #ffffff;
+  --black: #000000;
+  --back-ground: #2f303a;
+  --btn-ground: #f5f4fa;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: var(--white);
+  color: var(--primary-text-color);
+}
+
+.title {
+  color: var(--title-text-color);
+}
+
+/* ----------------ЛОГО--------------- */
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.logo .logo-part {
+  color: var(--accent-color);
+}
+
+/* ----------------ХЕДЕР--------------- */
+
+.site-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* ----------------ГЕРОЙ--------------- */
+
+.hero .button {
+  color: var(--white);
+  background-color: var(--accent-color);
+  border: none;
+  font-weight: 700;
+  /* font-size: 16px;
+  line-height: 1.88px;     Зажимає кнопку в рамки, не знаю як пофіксити */
+  letter-spacing: 0.06em;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: #2f303a;
+}
+
+/* ----------------ОСОБЛИВОСТІ--------------- */
+
+/* .features-list {
+} */
+
+.features-list .features-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* ----------------ДІЯЛЬНІСТЬ--------------- */
+
+/* ----------------КОМАНДА--------------- */
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.team-list .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.team-list .text {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+/* ----------------ПІДВАЛ--------------- */
+
+.main-footer {
+  background-color: var(--back-ground);
+}
+
+.footer-list .link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-list .address {
+  color: var(--white);
+}
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* Button */
+
+.button-list .button {
+  border: none;
+  background-color: var(--btn-ground);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.button-list .button:hover,
+.button-list .button:focus {
+  border: none;
+  color: var(--white);
+  background-color: var(--accent-color);
+}
+
+/* ----------------ПОРТФОЛІО--------------- */
+
+.port-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88px;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.port-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
