@@ -6,6 +6,8 @@
   --black: #000000;
   --back-ground: #2f303a;
   --btn-ground: #f5f4fa;
+  --btn-focus: #188ce8;
+  --footer-item: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -18,6 +20,19 @@ body {
   color: var(--title-text-color);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* ----------------ЛОГО--------------- */
 .logo {
   font-family: Raleway, sans-serif;
@@ -25,7 +40,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: var(--black);
   text-decoration: none;
 }
 
@@ -56,16 +71,35 @@ body {
   color: var(--accent-color);
 }
 
+.site-nav .link.cont {
+  color: var(--primary-text-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
 /* ----------------ГЕРОЙ--------------- */
 
+.hero {
+  background-color: var(--back-ground);
+}
+
 .hero .button {
+  cursor: pointer;
+  font-family: inherit;
   color: var(--white);
   background-color: var(--accent-color);
-  border: none;
+  border-color: transparent;
   font-weight: 700;
-  /* font-size: 16px;
-  line-height: 1.88px;     Зажимає кнопку в рамки, не знаю як пофіксити */
+  font-size: 16px;
+  line-height: 1.88;
   letter-spacing: 0.06em;
+}
+
+.hero .button:hover,
+.hero .button:focus {
+  background-color: var(--btn-focus);
 }
 
 .hero-title {
@@ -76,7 +110,6 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white);
-  background-color: #2f303a;
 }
 
 /* ----------------ОСОБЛИВОСТІ--------------- */
@@ -103,6 +136,10 @@ body {
 
 /* ----------------КОМАНДА--------------- */
 
+.section.team-section {
+  background-color: var(--btn-ground);
+}
+
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -123,10 +160,18 @@ body {
   letter-spacing: 0.03em;
 }
 
+.team-list .team-item {
+  background-color: var(--white);
+}
+
 /* ----------------ПІДВАЛ--------------- */
 
 .main-footer {
   background-color: var(--back-ground);
+}
+
+.logo.footer {
+  color: var(--white);
 }
 
 .footer-list .link {
@@ -135,19 +180,31 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-item);
 }
 
 .footer-list .address {
   color: var(--white);
 }
+
+.footer-list .link:hover,
+.footer-list .link:focus {
+  color: var(--accent-color);
+}
+
 .section-title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 /* Button */
 
 .button-list .button {
+  cursor: pointer;
+  font-family: inherit;
   border: none;
   background-color: var(--btn-ground);
   font-weight: 500;
@@ -169,7 +226,7 @@ body {
 .port-text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.88px;
+  line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
